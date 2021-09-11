@@ -1,12 +1,17 @@
 //#include <iostream>
 //#include <vector>
 //#include <queue>
-//
 //using namespace std;
 //
-// //잘못한 방법 1.bfs 쓸 생각을 1도 안함
+// //잘못한 방법 1.bfs 쓸 생각을 1도 안함 (dfs 도 사용 가능함)
 // //큐에 집어넣어서 순서대로 돌리면 이렇게 쉽게 구할 수 있는거를 개고생했네
 // //memory corruption이 생기는 이유는 뭘까?
+// //https://www.acmicpc.net/board/view/74859
+// //해결:
+// //원인은 cabbage (배추밭)을 trail 할 때마다 초기화 하지 않아서 발생하는 거였음.
+// //참고로 벡터는 .clear() 함수로는 모두가 초기화 되지 않는다. (capacity 값이 계속 남아있음)
+// //고로, swap을 이용해 벡터를 완벽하게 clear해줘야 한다.
+// //ex) vector<vector<int>>().swap(cabbage); 를 사용하면 빈 벡터와 swap을 해 완벽하게 깔끔한 벡터로 갈아끼워짐.
 // 
 //vector<vector<int>> cabbage;
 //int fieldX, fieldY;
@@ -65,6 +70,8 @@
 //
 //	for (int i = 0; i < trial; i++)
 //	{
+//        cabbage.clear();
+//        vector<vector<int>>().swap(cabbage); //배추밭 초기화
 //		int inputTrial;
 //		int worm = 0;
 // 		int xCab, yCab;

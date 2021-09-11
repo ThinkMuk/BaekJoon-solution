@@ -189,7 +189,7 @@
     <ClCompile Include="1003.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1012_RE_ERR.cpp">
+    <ClCompile Include="1012_RE.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
