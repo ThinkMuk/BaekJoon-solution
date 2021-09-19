@@ -210,5 +210,8 @@
     <ClCompile Include="1463_RE_DP.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1992.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
