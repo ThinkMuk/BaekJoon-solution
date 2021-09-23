@@ -139,9 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="10026.cpp" />
+    <ClCompile Include="10026_BFS.cpp" />
     <ClCompile Include="1003.cpp" />
-    <ClCompile Include="1012_RE.cpp" />
+    <ClCompile Include="1012_BFS_RE.cpp" />
     <ClCompile Include="10250.cpp" />
     <ClCompile Include="1074_RE.cpp" />
     <ClCompile Include="10773.cpp" />
