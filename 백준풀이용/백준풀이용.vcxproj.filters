@@ -225,5 +225,8 @@
     <ClCompile Include="11286_PQ.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1389_BFS_RE.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

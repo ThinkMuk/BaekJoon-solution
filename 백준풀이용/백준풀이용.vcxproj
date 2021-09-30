@@ -164,6 +164,7 @@
     <ClCompile Include="11866.cpp" />
     <ClCompile Include="1259.cpp" />
     <ClCompile Include="1330.cpp" />
+    <ClCompile Include="1389_BFS_RE.cpp" />
     <ClCompile Include="1436.cpp" />
     <ClCompile Include="1463_RE_DP.cpp" />
     <ClCompile Include="1546.cpp" />
