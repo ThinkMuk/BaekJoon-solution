@@ -156,6 +156,7 @@
     <ClCompile Include="11050.cpp" />
     <ClCompile Include="11286_PQ.cpp" />
     <ClCompile Include="11399.cpp" />
+    <ClCompile Include="11403_RE_floyd.cpp" />
     <ClCompile Include="1152.cpp" />
     <ClCompile Include="1157.cpp" />
     <ClCompile Include="11651.cpp" />
@@ -208,6 +209,7 @@
     <ClCompile Include="8958.cpp" />
     <ClCompile Include="9012.cpp" />
     <ClCompile Include="9095_RE_DP.cpp" />
+    <ClCompile Include="9375.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="2진수 문제.cpp" />
   </ItemGroup>
