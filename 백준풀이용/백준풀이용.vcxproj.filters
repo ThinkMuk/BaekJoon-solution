@@ -240,5 +240,8 @@
     <ClCompile Include="17626_RE_DP.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1927_minHeap%28PQ%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
