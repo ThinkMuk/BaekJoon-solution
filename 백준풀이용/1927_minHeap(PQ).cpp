@@ -12,7 +12,7 @@ using namespace std;
 // 
 // ****
 // 처음에 시간초과가 떴다.
-// 이를 해결하기 위해서는 int main에
+// 이를 해결하기 위해서는 int main에:
 // ios_base::sync_with_stdio(false);
 // cin.tie(NULL);
 // cout.tie(NULL);
@@ -45,4 +45,6 @@ int main()
 			minHeap.push(temp);
 		}
 	}
+
+	return 0;
 }
