@@ -192,7 +192,7 @@
     <ClCompile Include="2439.cpp" />
     <ClCompile Include="2562.cpp" />
     <ClCompile Include="2577.cpp" />
-    <ClCompile Include="2606.cpp" />
+    <ClCompile Include="2606_BFS_RE.cpp" />
     <ClCompile Include="2609.cpp" />
     <ClCompile Include="2630.cpp" />
     <ClCompile Include="2741.cpp" />
