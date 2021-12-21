@@ -155,6 +155,7 @@
     <ClCompile Include="10989_RE.cpp" />
     <ClCompile Include="11047.cpp" />
     <ClCompile Include="11050.cpp" />
+    <ClCompile Include="11279_maxHeap.cpp" />
     <ClCompile Include="11286_PQ.cpp" />
     <ClCompile Include="11399.cpp" />
     <ClCompile Include="11403_RE_floyd.cpp" />
