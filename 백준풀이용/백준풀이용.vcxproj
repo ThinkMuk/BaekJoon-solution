@@ -164,7 +164,7 @@
     <ClCompile Include="11651.cpp" />
     <ClCompile Include="11659.cpp" />
     <ClCompile Include="11720.cpp" />
-    <ClCompile Include="11724.cpp" />
+    <ClCompile Include="11724_DFS.cpp" />
     <ClCompile Include="11727_DP.cpp" />
     <ClCompile Include="11866.cpp" />
     <ClCompile Include="1259.cpp" />
@@ -180,6 +180,7 @@
     <ClCompile Include="1780.cpp" />
     <ClCompile Include="18111.cpp" />
     <ClCompile Include="1874.cpp" />
+    <ClCompile Include="18870.cpp" />
     <ClCompile Include="1920.cpp" />
     <ClCompile Include="1927_minHeap%28PQ%29.cpp" />
     <ClCompile Include="1929_RE.cpp" />

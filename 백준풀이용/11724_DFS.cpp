@@ -12,6 +12,9 @@
 // 
 // P.S. 다음번에 풀이 할 때는 BFS도 한번 이용해서 풀이해보기 (검색해서 추가 공부하기)
 // 
+// TODO: DFS 와 BFS를 코드 부분에서 이해해보기
+// https://better-tomorrow.tistory.com/entry/DFS-BFS-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
+// 
 //vector<vector<int>> v;
 //vector<bool> check;
 //

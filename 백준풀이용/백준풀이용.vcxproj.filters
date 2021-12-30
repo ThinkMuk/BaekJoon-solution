@@ -252,7 +252,10 @@
     <ClCompile Include="11279_maxHeap.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11724.cpp">
+    <ClCompile Include="11724_DFS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="18870.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
