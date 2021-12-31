@@ -177,6 +177,7 @@
     <ClCompile Include="1654.cpp" />
     <ClCompile Include="17219.cpp" />
     <ClCompile Include="17626_RE_DP.cpp" />
+    <ClCompile Include="1764.cpp" />
     <ClCompile Include="1780.cpp" />
     <ClCompile Include="18111.cpp" />
     <ClCompile Include="1874.cpp" />
