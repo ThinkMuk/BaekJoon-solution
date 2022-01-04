@@ -216,6 +216,7 @@
     <ClCompile Include="4153.cpp" />
     <ClCompile Include="4949.cpp" />
     <ClCompile Include="7568.cpp" />
+    <ClCompile Include="7576_BFS_RE.cpp" />
     <ClCompile Include="8958.cpp" />
     <ClCompile Include="9012.cpp" />
     <ClCompile Include="9095_RE_DP.cpp" />
