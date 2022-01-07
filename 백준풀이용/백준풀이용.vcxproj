@@ -188,6 +188,7 @@
     <ClCompile Include="1920.cpp" />
     <ClCompile Include="1927_minHeap%28PQ%29.cpp" />
     <ClCompile Include="1929_RE.cpp" />
+    <ClCompile Include="1931.cpp" />
     <ClCompile Include="1966_RE.cpp" />
     <ClCompile Include="1978_RE.cpp" />
     <ClCompile Include="1992.cpp" />
