@@ -4,108 +4,90 @@
 //#include <cmath>
 //using namespace std;
 //
-// 생각보다 쉬워보였지만 세번째에서 중복되는 경우를 잘 파악해서 체계적으로 만드는것이 관건.
-// 배열을 2개 만들어 서로 같은 위치에 위치해두게 함
-// 또한, cmath를 이용해 round를 쓰게 되면 첫째자리에서 반올림을 해줌
-// 두번째로 중복되는 수를 출력시킬려고 bool을 사용해 첫번째 발견시 true로 만들고 두번째때 출력되게 만듦
-// 
+////https://www.acmicpc.net/board/view/84722 질문 남겼으니 참고
+//
+//bool compare(const pair<int,int>& a, const pair<int,int>& b)
+//{
+//	if (a.second == b.second) {
+//		return a.first < b.first;
+//	}
+//	return a.second > b.second;
+//}
+//
 //int main()
 //{
 //	int trial;
-//	vector<int> array;
-//	vector<int> count;
-//	double ans1 = 0;
-//	int ans2 = 0;
-//	int ans3 = 0;
-//	int ans4 = 0;
-//	bool comp = false;
+//	vector<int> v;
+//	vector<pair<int, int>> tempV;
+//
+//
 //	cin >> trial;
 //
 //	for (int i = 0; i < trial; i++)
 //	{
 //		int temp;
 //		cin >> temp;
+//		v.push_back(temp);
 //
-//		ans1 += temp;
-//
-//		array.push_back(temp);
+//		if (tempV.empty()) {
+//			tempV.push_back(make_pair(temp, 1));
+//		}
+//		else {
+//			for (int j = 0; j < tempV.size(); j++)
+//			{
+//				if (temp == tempV[j].first) {
+//					tempV[j].second++;
+//				}
+//				else {
+//					tempV.push_back(make_pair(temp, 1));
+//					break;
+//				}
+//			}
+//		}
 //	}
 //
-//	sort(array.begin(), array.end());
+//	sort(v.begin(), v.end());
+//	sort(tempV.begin(), tempV.end(), compare);
 //
-//	//1번
-//	ans1 = round(ans1 / trial);
-//
-//	//2번
-//	ans2 = array[array.size() / 2];
-//
-//	//3번
-//	int sameCount = 1;
-//	for (int i = 0; i < trial; i++) //여기수정
+//	//1
+//	double fTemp = 0;
+//	for (int i = 0; i < v.size(); i++)
 //	{
-//		if (trial == 1)
-//		{
-//			count.push_back(1);
-//		}
-//		else 
-//		{
-//			if (i + 1 == trial-1 && array[i] == array[i + 1])
-//			{
-//				count.push_back(0);
-//				count.push_back(sameCount+1);
-//				break;
-//			}
-//			else if (i + 1 == trial-1 && array[i]!=array[i+1])
-//			{
-//				count.push_back(sameCount);
-//				count.push_back(1);
-//				break;
-//			}
-//			else if (array[i] == array[i + 1])
-//			{
-//				sameCount += 1;
-//				count.push_back(0);
-//			}
-//			else
-//			{
-//				count.push_back(sameCount);
-//				sameCount = 1;
-//			}
-//		}
+//		fTemp += v[i];
 //	}
+//	fTemp /= v.size();
+//	int fResult = floor(fTemp + 0.5);
 //
-//	int compare;
-//	for (int i = 0; i < trial; i++)
+//	//2
+//	int sResult = v[(v.size() / 2)];
+//
+//	//3
+//	int tTemp = 0;
+//	int tResult = 0;
+//	if (tempV.size() >= 2)
 //	{
-//		if (i == 0)
+//		for (int i = 0; i < 2; i++)
 //		{
-//			compare = count[i];
-//			ans3 = array[i];
-//		}
-//		else if (compare < count[i])
-//		{
-//			compare = count[i];
-//			ans3 = array[i];
-//		}
-//	}
-//	//중복확인
-//	for (int i = 0; i < trial; i++)
-//	{
-//		if (compare == count[i])
-//		{
-//			if (comp == false)
-//				comp = true;
-//			else
-//			{
-//				ans3 = array[i];
-//				break;
+//			if (tTemp <= tempV[i].second) {
+//				if (tTemp == tempV[i].second) {
+//					tResult = tempV[i].first;
+//					break;
+//				}
+//				else {
+//					tTemp = tempV[i].second;
+//					tResult = tempV[i].first;
+//				}
 //			}
 //		}
 //	}
+//	else {
+//		if (tTemp < tempV[0].second)
+//			tResult = tempV[0].first;
+//	}
 //
 //
-//	//4번
-//	ans4 = array.back()-array.front();
+//	//4
+//	int lResult = v[v.size() - 1] - v[0];
 //
-//	cout << ans1 << "\n" << ans2 << "\n" << ans3 << "\n" << ans4;
+//	cout << fResult << "\n" << sResult << "\n" << tResult << "\n" << lResult;
 //}
