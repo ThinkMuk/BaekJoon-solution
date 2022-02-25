@@ -4,8 +4,6 @@
 //#include <cmath>
 //using namespace std;
 //
-////https://www.acmicpc.net/board/view/84722 질문 남겼으니 참고
-//
 //bool compare(const pair<int,int>& a, const pair<int,int>& b)
 //{
 //	if (a.second == b.second) {
@@ -37,8 +35,9 @@
 //			{
 //				if (temp == tempV[j].first) {
 //					tempV[j].second++;
+//					break;
 //				}
-//				else {
+//				if (j == tempV.size() - 1) {
 //					tempV.push_back(make_pair(temp, 1));
 //					break;
 //				}
@@ -62,6 +61,7 @@
 //	int sResult = v[(v.size() / 2)];
 //
 //	//3
+//  //** 최빈값이 여러개일시 두번째로 작은 수 출력 ** (여기서 문제인듯?)
 //	int tTemp = 0;
 //	int tResult = 0;
 //	if (tempV.size() >= 2)
