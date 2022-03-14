@@ -180,6 +180,7 @@
     <ClCompile Include="15829_RE.cpp" />
     <ClCompile Include="1620.cpp" />
     <ClCompile Include="1654.cpp" />
+    <ClCompile Include="1676.cpp" />
     <ClCompile Include="1697_BFS.cpp" />
     <ClCompile Include="17219.cpp" />
     <ClCompile Include="17626_RE_DP.cpp" />
