@@ -229,6 +229,7 @@
     <ClCompile Include="9012.cpp" />
     <ClCompile Include="9095_RE_DP.cpp" />
     <ClCompile Include="9375.cpp" />
+    <ClCompile Include="9461.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="2진수 문제.cpp" />
   </ItemGroup>
